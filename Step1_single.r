@@ -1,6 +1,6 @@
 iii=1
-method.list = c("glmnet", "svmLinear", "rf", "xgbTree", "lda2","nnet","naive_bayes","glmboost","hdda","bayesglm")   
-vecT=expand.grid(c(1,3,4,5,6,8),1:10)   
+method.list = c("glmnet", "svmLinear", "rf", "xgbTree", "lda2","nnet","glmboost","hdda")   
+vecT=expand.grid(c(1,3,4,5,6,7),1:8)   
 i1=vecT[iii,1]   
 i2=vecT[iii,2]   
 library(caret)   
