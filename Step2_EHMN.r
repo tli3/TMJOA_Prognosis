@@ -1,5 +1,5 @@
-#i2=8;optN=18#24
-method.list = c("glmnet", "svmLinear", "rf", "xgbTree", "lda2","nnet","naive_bayes","glmboost","hdda","bayesglm")     
+#i2=7;optN=18#24
+method.list = c("glmnet", "svmLinear", "rf", "xgbTree", "lda2","nnet","glmboost","hdda")     
 library(caret)   
 library(glmnet)   
 library(pROC)
