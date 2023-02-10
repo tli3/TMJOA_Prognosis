@@ -5,7 +5,7 @@ mkdir(code_dir);
 delete(sprintf('%s/*',code_dir)); 
 fid0=fopen(sprintf('%s/All.sh',code_dir),'w'); 
 fprintf(fid0,'#!/bin/bash \n');
-for iii=1:60 
+for iii=1:48 
 batNames = sprintf('%s/bat%i.pbs',code_dir,iii);
 fid = fopen(batNames,'w');
 fprintf(fid,'#!/bin/bash \n');
@@ -22,8 +22,8 @@ batNames = sprintf('%s/bat%i.r',code_dir,iii);
 fid = fopen(batNames,'w');
 fprintf(fid,'iii=1 \n');
 fprintf(fid,'iii=%i \n',iii);
-fprintf(fid,'method.list = c("glmnet", "svmLinear", "rf", "xgbTree", "lda2","nnet","naive_bayes","glmboost","hdda","bayesglm")    \n');
-fprintf(fid,'vecT=expand.grid(c(1,3,4,5,6,8),1:10)    \n');
+fprintf(fid,'method.list = c("glmnet", "svmLinear", "rf", "xgbTree", "lda2","nnet","glmboost","hdda")    \n');
+fprintf(fid,'vecT=expand.grid(c(1,3,4,5,6,7),1:8)    \n');
 fprintf(fid,'i1=vecT[iii,1]    \n');
 fprintf(fid,'i2=vecT[iii,2]    \n');
 fprintf(fid,'library(caret)    \n');
