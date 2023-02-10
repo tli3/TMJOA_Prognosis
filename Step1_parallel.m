@@ -1,5 +1,5 @@
 clear 
-home_dir = '/overflow/tengfei/user/tengfei/projects/TMJ_longitudinal/20211201/prediction/NestCV' 
+home_dir = '/MYPATH/' 
 code_dir = fullfile(home_dir,'code'); 
 mkdir(code_dir); 
 delete(sprintf('%s/*',code_dir)); 
@@ -13,7 +13,7 @@ fprintf(fid,'#SBATCH --ntasks=1 \n');
 fprintf(fid,'#SBATCH --time=19:59:59 \n');
 fprintf(fid,'#SBATCH --mem=12000 \n');
 fprintf(fid,'#SBATCH --wrap=mytask \n');
-fprintf(fid,'cd /overflow/tengfei/user/tengfei/projects/TMJ_longitudinal/20211201/prediction/NestCV \n');
+fprintf(fid,'cd MYPATH/ \n');
 fprintf(fid,'module load r/4.1.0 \n');
 fprintf(fid,'R CMD BATCH --no-save --no-restore %s/bat%i.r %s/bat%i.out\n',code_dir,iii,code_dir,iii); 
 fclose(fid); 
