@@ -5,7 +5,11 @@ The output will include the predicted responses (y) in "out/" folder as independ
 other outputs will also include the importance scores of all features in imp/ folder, the number of selected features for each test and training set, in the select/ folder, and the SHAP value in the SHAP/ folder.
 The first line of step 1 is iii=1. But the sucessful implementation of step 1 is that not only iii=1 can run successfully but also iii=2,3,4,...48 can all run successfully, with 48 files in out/ and 48 files in out_valid/ folders being generated successfully.
 
-Step2: the script is Step2_EHMN.r. The input is the all predicted responses in "out/" folder which are the output in Step 1 (after you run iii=1,2,...48). 
+Step2: the script is Step2_EHMN.r. The input are the response (first column) in  "TMJOAI_Long_040422_Norm.csv" and all predicted responses using 48 methods in "out/" folder which are the output in Step 1 (after you run iii=1,2,...48). The output will be the predicted responses, shap values and plots in folder "final"
+
+Step3: the script is Step3_summary.r. The input are the response (first column) in  "TMJOAI_Long_040422_Norm.csv" and all predicted responses using 48 methods in "out/" folder which are the output in Step 1 (after you run iii=1,2,...48). The output are the summary results for model performance and comparison in files performance_test_set_48methods.csv and performance_valid_set_48methods.csv. Also plots for inference are generated in this step, including boxplot to compare the summary results, SHAPley plots to show feature importance, AUC plot to show AUCs of each method.
+
+Other plots: the circular plot is shown in the Otherplot_circ.r
 
 
 # Method description.
