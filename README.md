@@ -1,5 +1,3 @@
-# TMJOA_Prognosis
-
 # Input, output and script description.
 
 
