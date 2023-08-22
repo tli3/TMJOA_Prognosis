@@ -1,7 +1,10 @@
 # TMJOA_Prognosis
 
-#Input, output and script description.
-#Method description.
+# Input, output and script description.
+
+
+# Method description.
+
 To avoid overfitting, we employed the nested 10-fold CV method to build and evaluate the
 performance of various predictive models. Our method consisted of two nested CV loops, each
 implementing a 10-fold CV. The outer loop aimed to provide an unbiased evaluation of model
