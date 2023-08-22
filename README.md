@@ -3,6 +3,9 @@
 Step1: The input is "TMJOAI_Long_040422_Norm.csv", which includes the response (y) (first column) and standardized features/covariates X (all the other columns).
 The output will include the predicted responses (y) in "out/" folder as independent test set, and the predicted responses (y) in "out_valid/" folder as validation data set.
 other outputs will also include the importance scores of all features in imp/ folder, the number of selected features for each test and training set, in the select/ folder, and the SHAP value in the SHAP/ folder.
+The first line of step 1 is iii=1. But the sucessful implementation of step 1 is that not only iii=1 can run successfully but also iii=2,3,4,...77 can all run successfully, with 77 files in out/ and 77 files in out_valid/ folders being generated successfully.
+
+
 
 # Method description.
 
