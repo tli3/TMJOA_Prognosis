@@ -1,5 +1,8 @@
 # Input, output and script description.
 
+Step1: The input is "TMJOAI_Long_040422_Norm.csv", which includes the response (y) (first column) and standardized features/covariates X (all the other columns).
+The output will include the predicted responses (y) in "out/" folder as independent test set, and the predicted responses (y) in "out_valid/" folder as validation data set.
+other outputs will also include the importance scores of all features in imp/ folder, the number of selected features for each test and training set, in the select/ folder, and the SHAP value in the SHAP/ folder.
 
 # Method description.
 
