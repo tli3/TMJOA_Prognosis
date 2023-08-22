@@ -5,7 +5,7 @@ The output will include the predicted responses (y) in "out/" folder as independ
 other outputs will also include the importance scores of all features in imp/ folder, the number of selected features for each test and training set, in the select/ folder, and the SHAP value in the SHAP/ folder.
 The first line of step 1 is iii=1. But the sucessful implementation of step 1 is that not only iii=1 can run successfully but also iii=2,3,4,...48 can all run successfully, with 48 files in out/ and 48 files in out_valid/ folders being generated successfully.
 
-Step2:
+Step2: the script is Step2_EHMN.r. The input is the all predicted responses in "out/" folder which are the output in Step 1 (after you run iii=1,2,...48). 
 
 
 # Method description.
