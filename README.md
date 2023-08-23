@@ -1,9 +1,9 @@
 # Input, output and script description.
 
-Step1: The script is step1_single.r. The input is "TMJOAI_Long_040422_Norm.csv", which includes the response (y) (first column) and standardized features/covariates X (all the other columns).
+Step1: The scripts of the first step are 48 R scripts in the folder step1_singleR. This represents 48 machine learning methods, with each method in one R script file. The input of each R script is "TMJOAI_Long_040422_Norm.csv", which includes the response (y) (first column) and standardized features/covariates X (all the other columns).
 The output will include the predicted responses (y) in "out/" folder as independent test set, and the predicted responses (y) in "out_valid/" folder as validation data set.
 other outputs will also include the importance scores of all features in imp/ folder, the number of selected features for each test and training set, in the select/ folder, and the SHAP value in the SHAP/ folder.
-The first line of step 1 is iii=1. But the sucessful implementation of step 1 is that not only iii=1 can run successfully but also iii=2,3,4,...48 can all run successfully, with 48 files in out/ and 48 files in out_valid/ folders being generated successfully.
+The first line of step 1 is iii. the sucessful implementation of step 1 is that iii=1,2,3,4,...48 in the 48 R scripts can all run successfully, with 48 files in out/ and 48 files in out_valid/ folders being generated successfully.
 
 Step2: the script is Step2_EHMN.r. The input are the response (first column) in  "TMJOAI_Long_040422_Norm.csv" and all predicted responses using 48 methods in "out/" folder which are the output in Step 1 (after you run iii=1,2,...48). The output will be the predicted responses, shap values and plots in folder "final"
 
